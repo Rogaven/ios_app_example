@@ -1,0 +1,2 @@
+#!/bin/sh
+APP_BUNDLE_PATH='~/Library/Developer/Xcode/DerivedData/DictApp-evqkbzcftajuxubvwfygproeyvlw/Build/Products/Debug-iphonesimulator/DictApp-cal.app' DEVICE=iphonesimulator OS=ios9.3 cucumber

@@ -7,7 +7,12 @@
 		<key>Cedar_UnitTest.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>5</integer>
+			<integer>1</integer>
+		</dict>
+		<key>DictApp-cal.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
 		</dict>
 		<key>DictApp.xcscheme</key>
 		<dict>
@@ -33,6 +38,11 @@
 			<true/>
 		</dict>
 		<key>FAFDA56D1A26745A00377585</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>b39ade9df3b6024bce64e4f7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
