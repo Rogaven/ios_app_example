@@ -1,4 +1,14 @@
-platform :ios, '7.0'
+platform :ios, '8.0'
+# use_frameworks!
 
-pod "AFNetworking", "~> 2.0"
-pod 'libextobjc', "~>0.4"
+source 'https://github.com/CocoaPods/Specs.git'
+project 'DictApp.xcodeproj'
+
+target 'DictApp' do
+    workspace 'DictApp.xcworkspace'
+    project 'DictApp.xcodeproj'
+    
+    pod "AFNetworking", "~> 2.0"
+    pod 'libextobjc', "~>0.4"
+end
+

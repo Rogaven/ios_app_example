@@ -22,18 +22,18 @@
     return checkbox;
 }
 
--(void)setEnabled:(BOOL)enabled {
+- (void)setEnabled:(BOOL)enabled {
     [super setEnabled:enabled];
     self.layer.borderColor = [UIColor colorWithWhite:0.9 alpha:(enabled) ? 1 : 0].CGColor;
 }
 
--(void)setOn:(BOOL)on {
+- (void)setOn:(BOOL)on {
     [self setTitle:(on) ? @"✔︎" : nil forState:UIControlStateNormal];
     [self setTitleColor:[UIColor colorWithRed:1.03f/2.55f green:1.56f/2.55f blue:0.34/2.55f alpha:1] forState:UIControlStateNormal];
     [self setTitleColor:[UIColor colorWithWhite:0.9 alpha:1] forState:UIControlStateDisabled];
 }
 
--(void)layoutSubviews {
+- (void)layoutSubviews {
     [super layoutSubviews];
     self.titleLabel.frame = self.bounds;
 }

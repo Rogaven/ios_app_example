@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C68C1E01E45151C34027C907 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37753B6CBD4D9B152FB01299 /* libPods.a */; };
+		5E45D0B77594D73DD2027DD6 /* libPods-DictApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 106DBF15CA4F4498869202FE /* libPods-DictApp.a */; };
+		6735CD6F1D47F0AB00D7216A /* Spec.md in Sources */ = {isa = PBXBuildFile; fileRef = 6735CD6E1D47F0AB00D7216A /* Spec.md */; };
+		6735CD771D47F67300D7216A /* XC_UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6735CD761D47F67300D7216A /* XC_UITests.m */; };
 		FA11CBBC1A2BD2F9006D4B45 /* DAProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA11CBBB1A2BD2F9006D4B45 /* DAProgressView.m */; };
 		FA11CBBF1A2BD92F006D4B45 /* DACardView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA11CBBE1A2BD92F006D4B45 /* DACardView.m */; };
 		FA45AFD41A26840F00F6EF8E /* DAWord.m in Sources */ = {isa = PBXBuildFile; fileRef = FA45AFD31A26840F00F6EF8E /* DAWord.m */; };
@@ -28,10 +30,24 @@
 		FAFDA5771A26745A00377585 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFDA5761A26745A00377585 /* AppDelegate.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		6735CD791D47F67300D7216A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAFDA5661A26745A00377585 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAFDA56D1A26745A00377585;
+			remoteInfo = DictApp;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		37753B6CBD4D9B152FB01299 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		3A573CA7B387DABB8EA877B6 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		D746677EDA157EC679E16746 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		106DBF15CA4F4498869202FE /* libPods-DictApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DictApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6735CD6E1D47F0AB00D7216A /* Spec.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Spec.md; sourceTree = "<group>"; };
+		6735CD741D47F67300D7216A /* App_UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = App_UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6735CD761D47F67300D7216A /* XC_UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XC_UITests.m; sourceTree = "<group>"; };
+		6735CD781D47F67300D7216A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0FC8F0E96410308C2D08DEE /* Pods-DictApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DictApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DictApp/Pods-DictApp.debug.xcconfig"; sourceTree = "<group>"; };
+		F584B039D44908EB9028910C /* Pods-DictApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DictApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-DictApp/Pods-DictApp.release.xcconfig"; sourceTree = "<group>"; };
 		FA11CBBA1A2BD2F9006D4B45 /* DAProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAProgressView.h; sourceTree = "<group>"; };
 		FA11CBBB1A2BD2F9006D4B45 /* DAProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAProgressView.m; sourceTree = "<group>"; };
 		FA11CBBD1A2BD92F006D4B45 /* DACardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DACardView.h; sourceTree = "<group>"; };
@@ -70,11 +86,18 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		6735CD711D47F67300D7216A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FAFDA56B1A26745A00377585 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C68C1E01E45151C34027C907 /* libPods.a in Frameworks */,
+				5E45D0B77594D73DD2027DD6 /* libPods-DictApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,16 +107,35 @@
 		462571AB60473645549D1DA2 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D746677EDA157EC679E16746 /* Pods.debug.xcconfig */,
-				3A573CA7B387DABB8EA877B6 /* Pods.release.xcconfig */,
+				D0FC8F0E96410308C2D08DEE /* Pods-DictApp.debug.xcconfig */,
+				F584B039D44908EB9028910C /* Pods-DictApp.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		6735CD751D47F67300D7216A /* App_UITests */ = {
+			isa = PBXGroup;
+			children = (
+				6735CD761D47F67300D7216A /* XC_UITests.m */,
+				6735CD781D47F67300D7216A /* Info.plist */,
+			);
+			name = App_UITests;
+			path = DictApp_UITests;
+			sourceTree = "<group>";
+		};
+		6735CD7E1D47F67F00D7216A /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				6735CD751D47F67300D7216A /* App_UITests */,
+			);
+			name = Tests;
 			sourceTree = "<group>";
 		};
 		B8AD88B6BB0026B0A46DBAFE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				37753B6CBD4D9B152FB01299 /* libPods.a */,
+				462571AB60473645549D1DA2 /* Pods */,
+				106DBF15CA4F4498869202FE /* libPods-DictApp.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -174,10 +216,11 @@
 		FAFDA5651A26745A00377585 = {
 			isa = PBXGroup;
 			children = (
+				6735CD6E1D47F0AB00D7216A /* Spec.md */,
 				FAFDA5701A26745A00377585 /* DictApp */,
 				FAFDA5D81A267BD300377585 /* Resources */,
-				462571AB60473645549D1DA2 /* Pods */,
 				B8AD88B6BB0026B0A46DBAFE /* Frameworks */,
+				6735CD7E1D47F67F00D7216A /* Tests */,
 				FAFDA56F1A26745A00377585 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -186,6 +229,7 @@
 			isa = PBXGroup;
 			children = (
 				FAFDA56E1A26745A00377585 /* DictApp.app */,
+				6735CD741D47F67300D7216A /* App_UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -225,15 +269,34 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		6735CD731D47F67300D7216A /* App_UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6735CD7B1D47F67300D7216A /* Build configuration list for PBXNativeTarget "App_UITests" */;
+			buildPhases = (
+				6735CD701D47F67300D7216A /* Sources */,
+				6735CD711D47F67300D7216A /* Frameworks */,
+				6735CD721D47F67300D7216A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6735CD7A1D47F67300D7216A /* PBXTargetDependency */,
+			);
+			name = App_UITests;
+			productName = DictApp_UITests;
+			productReference = 6735CD741D47F67300D7216A /* App_UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		FAFDA56D1A26745A00377585 /* DictApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAFDA5911A26745A00377585 /* Build configuration list for PBXNativeTarget "DictApp" */;
 			buildPhases = (
-				E5684205ADCE5FD3833C7F55 /* Check Pods Manifest.lock */,
+				E5684205ADCE5FD3833C7F55 /* [CP] Check Pods Manifest.lock */,
 				FAFDA56A1A26745A00377585 /* Sources */,
 				FAFDA56B1A26745A00377585 /* Frameworks */,
 				FAFDA56C1A26745A00377585 /* Resources */,
-				8178D4BCED5275AC4B85E0FC /* Copy Pods Resources */,
+				8178D4BCED5275AC4B85E0FC /* [CP] Copy Pods Resources */,
+				0997A106FFE47D7BE505B304 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,6 +316,10 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = Nazaroff;
 				TargetAttributes = {
+					6735CD731D47F67300D7216A = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = FAFDA56D1A26745A00377585;
+					};
 					FAFDA56D1A26745A00377585 = {
 						CreatedOnToolsVersion = 6.1;
 						DevelopmentTeam = ZL896XYJDT;
@@ -273,11 +340,19 @@
 			projectRoot = "";
 			targets = (
 				FAFDA56D1A26745A00377585 /* DictApp */,
+				6735CD731D47F67300D7216A /* App_UITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		6735CD721D47F67300D7216A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FAFDA56C1A26745A00377585 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -290,29 +365,44 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		8178D4BCED5275AC4B85E0FC /* Copy Pods Resources */ = {
+		0997A106FFE47D7BE505B304 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DictApp/Pods-DictApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E5684205ADCE5FD3833C7F55 /* Check Pods Manifest.lock */ = {
+		8178D4BCED5275AC4B85E0FC /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DictApp/Pods-DictApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5684205ADCE5FD3833C7F55 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -323,6 +413,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		6735CD701D47F67300D7216A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6735CD771D47F67300D7216A /* XC_UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FAFDA56A1A26745A00377585 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -333,6 +431,7 @@
 				FA45AFE01A26842C00F6EF8E /* DAWordsViewController.m in Sources */,
 				FA45AFF11A2685DC00F6EF8E /* DAVocabulary.m in Sources */,
 				FA45AFEB1A26847500F6EF8E /* DAUtils.m in Sources */,
+				6735CD6F1D47F0AB00D7216A /* Spec.md in Sources */,
 				FA45AFE11A26842C00F6EF8E /* DACheckbox.m in Sources */,
 				FAFDA5771A26745A00377585 /* AppDelegate.m in Sources */,
 				FA45AFF91A268A5B00F6EF8E /* DAAPIMethods.m in Sources */,
@@ -348,6 +447,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		6735CD7A1D47F67300D7216A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAFDA56D1A26745A00377585 /* DictApp */;
+			targetProxy = 6735CD791D47F67300D7216A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		FA45AFE41A26845800F6EF8E /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -361,6 +468,39 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		6735CD7C1D47F67300D7216A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = DictApp_UITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nazaroff.DictApp-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5e5d2cca-d46b-4d70-9c3a-e3013a51127a";
+				TEST_TARGET_NAME = DictApp;
+			};
+			name = Debug;
+		};
+		6735CD7D1D47F67300D7216A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = DictApp_UITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nazaroff.DictApp-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5e5d2cca-d46b-4d70-9c3a-e3013a51127a";
+				TEST_TARGET_NAME = DictApp;
+			};
+			name = Release;
+		};
 		FAFDA58F1A26745A00377585 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -396,7 +536,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -431,7 +571,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -440,7 +580,7 @@
 		};
 		FAFDA5921A26745A00377585 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D746677EDA157EC679E16746 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = D0FC8F0E96410308C2D08DEE /* Pods-DictApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -456,7 +596,7 @@
 		};
 		FAFDA5931A26745A00377585 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3A573CA7B387DABB8EA877B6 /* Pods.release.xcconfig */;
+			baseConfigurationReference = F584B039D44908EB9028910C /* Pods-DictApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -473,6 +613,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		6735CD7B1D47F67300D7216A /* Build configuration list for PBXNativeTarget "App_UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6735CD7C1D47F67300D7216A /* Debug */,
+				6735CD7D1D47F67300D7216A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		FAFDA5691A26745A00377585 /* Build configuration list for PBXProject "DictApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

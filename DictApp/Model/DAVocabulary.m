@@ -24,7 +24,6 @@
 }
 
 - (void)storeBase {
-    // TODO: В идеале тут конечно можно сохранять в CoreData/ sqlite/ etc...
     NSString *path = [self basePath];
     if (path) {
         [[NSKeyedArchiver archivedDataWithRootObject:self.words] writeToFile:path atomically:YES];
@@ -32,11 +31,11 @@
 }
 
 - (BOOL)restoreBase {
-    NSString *path = [self basePath];
-    if (path) {
-        self.words = [NSKeyedUnarchiver unarchiveObjectWithData:[NSData dataWithContentsOfFile:[self basePath]]];
-        return self.words;
-    }
+//    NSString *path = [self basePath];
+//    if (path) {
+//        self.words = [NSKeyedUnarchiver unarchiveObjectWithData:[NSData dataWithContentsOfFile:[self basePath]]];
+//        return self.words;
+//    }
     return NO;
 }
 
@@ -73,7 +72,9 @@
     self.error =  err;
     
     if (self.completion) {
-        DADispatchInMainThread(self.completion);
+        static NSTimeInterval const testDelay = 3.0f;
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(testDelay * NSEC_PER_SEC)), dispatch_get_main_queue(),
+                       self.completion);
     }
 }
 
@@ -96,7 +97,7 @@
     [self storeBase];
 }
 
--(void)search:(NSString *)text {
+- (void)search:(NSString *)text {
     if (text.length == 0) {
         self.filteredWords = nil;
         return;

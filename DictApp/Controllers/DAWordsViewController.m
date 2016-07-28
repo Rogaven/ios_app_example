@@ -80,11 +80,11 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateVocabulary) name:kDACardsDidUdateNotification object:nil];
 }
 
--(void)dealloc {
+- (void)dealloc {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
--(void)viewWillLayoutSubviews {
+- (void)viewWillLayoutSubviews {
     [super viewWillLayoutSubviews];
     if (self.errorView) {
         self.errorView.frame = self.view.bounds;
@@ -239,19 +239,19 @@
     }
 }
 
--(void)searchBarCancelButtonClicked:(UISearchBar *)searchBar {
+- (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar {
     [self searchBarTextDidEndEditing:searchBar];
 }
 
--(void)searchBarTextDidEndEditing:(UISearchBar *)searchBar {
+- (void)searchBarTextDidEndEditing:(UISearchBar *)searchBar {
     [searchBar resignFirstResponder];
 }
 
--(void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
+- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
    [searchBar resignFirstResponder];
 }
 
--(BOOL)searchBarShouldEndEditing:(UISearchBar *)searchBar {
+- (BOOL)searchBarShouldEndEditing:(UISearchBar *)searchBar {
     return YES;
 }
 

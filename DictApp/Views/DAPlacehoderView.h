@@ -10,7 +10,6 @@
 
 typedef void (^DAPlacehoderViewRetryBlock)();
 
-
 @interface DAPlacehoderView : UIView
 @property (nonatomic, strong) NSString *text;
 @property (nonatomic, assign) BOOL showRetryButton;

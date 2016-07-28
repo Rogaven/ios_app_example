@@ -20,7 +20,7 @@
     return word;
 }
 
--(id)initWithCoder:(NSCoder *)aDecoder {
+- (id)initWithCoder:(NSCoder *)aDecoder {
     self = [super init];
     self.uuid = [aDecoder decodeObjectForKey:@"u"];
     self.value = [aDecoder decodeObjectForKey:@"v"];
@@ -30,7 +30,7 @@
     return self;
 }
 
--(void)encodeWithCoder:(NSCoder *)aCoder {
+- (void)encodeWithCoder:(NSCoder *)aCoder {
     [aCoder encodeObject:self.uuid forKey:@"u"];
     [aCoder encodeObject:self.value forKey:@"v"];
     [aCoder encodeObject:self.translation forKey:@"t"];
@@ -39,7 +39,7 @@
     [aCoder encodeBool:self.studying forKey:@"s2"];
 }
 
--(void)setStudied:(BOOL)studied {
+- (void)setStudied:(BOOL)studied {
     _studied = studied;
     _studying = NO;
 }

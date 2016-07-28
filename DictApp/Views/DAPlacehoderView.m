@@ -13,7 +13,7 @@
     UIButton *_retry;
 }
 
--(instancetype)initWithFrame:(CGRect)frame {
+- (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
         _label = [[UILabel alloc] initWithFrame:self.bounds];
@@ -33,7 +33,7 @@
     return self;
 }
 
--(void)layoutSubviews {
+- (void)layoutSubviews {
     _label.frame = self.bounds;
     _retry.frame = CGRectIntegral((CGRect){0.5f*(self.frame.size.width - _retry.frame.size.width),
                                           0.5f*self.frame.size.height + _retry.frame.size.height,
@@ -42,13 +42,11 @@
     
 }
 
--(void)setText:(NSString *)text {
+- (void)setText:(NSString *)text {
     _label.text = text;
 }
 
--(void)setShowRetryButton:(BOOL)showRetryButton {
-//    _showRetryButton = showRetryButton;
-//    _retry.hidden = !showRetryButton;
+- (void)setShowRetryButton:(BOOL)showRetryButton {
 }
 
 - (void)action {

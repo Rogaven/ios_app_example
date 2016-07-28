@@ -30,14 +30,6 @@ static NSUInteger const kOffset = 15;
 
 @implementation DACardsViewController
 
--(id)initWithCoder:(NSCoder *)aDecoder {
-    self = [super initWithCoder:aDecoder];
-    if (self) {
-
-    }
-    return self;
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -46,13 +38,13 @@ static NSUInteger const kOffset = 15;
     [self createCards];
 }
 
--(void)viewWillAppear:(BOOL)animated {
+- (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     [self createProgressView];
     [self updateCards];
 }
 
--(void)viewWillDisappear:(BOOL)animated {
+- (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
     [self destroyProgressView];
 }
@@ -92,6 +84,7 @@ static NSUInteger const kOffset = 15;
         [card addTarget:self action:@selector(cardSelected:) forControlEvents:UIControlEventTouchDown];
         [card addTarget:self action:@selector(cardMoved:withEvent:) forControlEvents:UIControlEventTouchDragInside];
         [card addTarget:self action:@selector(cardDeselected:) forControlEvents:UIControlEventTouchUpInside];
+        card.accessibilityLabel = @(i).stringValue;
         [self.view addSubview:card];
         [_cardViews addObject:card];
     }
@@ -195,7 +188,6 @@ static NSUInteger const kOffset = 15;
 }
 
 - (void)cardDeselected:(DACardView *)sender {
-    
     for (NSInteger i=0; i < kMaxCardsCountInRow*2; ++i) {
         DACardView *card = _cardViews[i];
         if (card != sender && card.isTranslation != sender.isTranslation && CGRectContainsPoint(card.frame, sender.center)) {

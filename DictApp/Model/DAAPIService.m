@@ -39,7 +39,6 @@ static NSString * const kDAAPIServiceBaseURL = @"http://static01.%@.com/tmp/%@";
 }
 
 + (NSError *)invalidDataError {
-    //TODO: В идеале надо завести под ошибки енум.
     return [NSError errorWithDomain:@"DicApp" code:-1 userInfo:nil];
 }
 
@@ -61,7 +60,9 @@ static NSString * const kDAAPIServiceBaseURL = @"http://static01.%@.com/tmp/%@";
 
 - (NSString *)methodURLString {
     NSAssert(self.name, @"Name parameter is required");
-    return [NSString stringWithFormat:kDAAPIServiceBaseURL, [[@"v겺Z'" dataUsingEncoding:NSUTF8StringEncoding] base64EncodedStringWithOptions:0], self.name];
+    return [NSString stringWithFormat:kDAAPIServiceBaseURL,
+            [[NSString alloc] initWithData:[[NSData alloc] initWithBase64EncodedData:[@"ZHVveXVsb25n" dataUsingEncoding:NSUTF8StringEncoding] options:0] encoding:NSUTF8StringEncoding],
+            self.name];
 }
 
 @end

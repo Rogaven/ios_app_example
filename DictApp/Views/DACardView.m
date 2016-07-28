@@ -16,7 +16,7 @@
     return [self buttonWithType:UIButtonTypeCustom];
 }
 
--(instancetype)initWithFrame:(CGRect)frame {
+- (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
         self.layer.borderWidth = 1;
@@ -34,18 +34,18 @@
     return self;
 }
 
--(void)layoutSubviews {
+- (void)layoutSubviews {
     _label.frame = self.bounds;
 }
 
--(void)setCardState:(DACardViewState)state {
+- (void)setCardState:(DACardViewState)state {
     if (state != _cardState) {
         _cardState = state;
         [self setupColorsWithState:state];
     }
 }
 
--(void)setCardTitle:(NSString *)title {
+- (void)setCardTitle:(NSString *)title {
     if (_cardTitle != title) {
         _cardTitle = title;
         _label.text = [title capitalizedString];
@@ -72,7 +72,7 @@
     }
 }
 
--(void)setHighlighted:(BOOL)highlighted {
+- (void)setHighlighted:(BOOL)highlighted {
     [super setHighlighted:highlighted];
     
     BOOL hlt = highlighted || self.selected;
@@ -81,7 +81,7 @@
     self.backgroundColor = [self.backgroundColor colorWithAlphaComponent:(hlt ? 0.7: 1)];
 }
 
--(void)setSelected:(BOOL)selected {
+- (void)setSelected:(BOOL)selected {
     [super setSelected:selected];
     
     BOOL hlt = self.highlighted || selected;

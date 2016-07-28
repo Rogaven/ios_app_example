@@ -78,7 +78,7 @@ static const NSUInteger kDACounterViewLabelsMaxCount = 4;
     }
 }
 
--(void)drawRect:(CGRect)rect {
+- (void)drawRect:(CGRect)rect {
     [super drawRect:rect];
 
     CGFloat w = roundf(self.frame.size.width / kDACounterViewLabelsMaxCount);
@@ -95,6 +95,10 @@ static const NSUInteger kDACounterViewLabelsMaxCount = 4;
     
         CGContextStrokePath(context);
     }
+}
+
+- (NSString *)accessibilityValue {
+    return @(self.count).stringValue;
 }
 
 @end
