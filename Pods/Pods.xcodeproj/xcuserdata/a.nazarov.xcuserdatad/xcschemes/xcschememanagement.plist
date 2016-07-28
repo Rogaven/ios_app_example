@@ -9,6 +9,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Cedar.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Cedar_UnitTest.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-DictApp.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +32,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0BE1A257187D9A1CA9F93879FE168AE7</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>410B25DF16EA5C5B3E2698F74F9625FB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>78E1404783F31B13F70C7BD215B03BA2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>7E41CA2ECB40C640963734378302229C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A91AF9146B6156804C8478A4AC5DCCDE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E7474B0C0591ECDA086213B8443DB86A</key>
 		<dict>
 			<key>primary</key>
 			<true/>

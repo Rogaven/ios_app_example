@@ -10,5 +10,13 @@ target 'DictApp' do
     
     pod "AFNetworking", "~> 2.0"
     pod 'libextobjc', "~>0.4"
+    
+    pod 'Cedar'
 end
 
+target 'Cedar_UnitTest' do
+    workspace 'DictApp.xcworkspace'
+    project 'DictApp.xcodeproj'
+    
+    pod 'Cedar'
+end

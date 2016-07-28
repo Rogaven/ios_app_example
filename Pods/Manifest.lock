@@ -20,6 +20,7 @@ PODS:
   - AFNetworking/UIKit (2.6.3):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - Cedar (1.0)
   - libextobjc (0.4.1):
     - libextobjc/EXTADT (= 0.4.1)
     - libextobjc/EXTConcreteProtocol (= 0.4.1)
@@ -58,12 +59,14 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 2.0)
+  - Cedar
   - libextobjc (~> 0.4)
 
 SPEC CHECKSUMS:
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
+  Cedar: a641e5ed0353bd9d45782ce365d0822b7342cce3
   libextobjc: a650fc1bf489a3d3a9bc2e621efa3e1006fc5471
 
-PODFILE CHECKSUM: d5fb93433c8d8c64d36a0c78e6f1d95fa7b43a9a
+PODFILE CHECKSUM: eb2cedeeb76e788df7ac936e08be3796b63fc827
 
 COCOAPODS: 1.0.1

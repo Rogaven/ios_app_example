@@ -10,6 +10,12 @@
 		5E45D0B77594D73DD2027DD6 /* libPods-DictApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 106DBF15CA4F4498869202FE /* libPods-DictApp.a */; };
 		6735CD6F1D47F0AB00D7216A /* Spec.md in Sources */ = {isa = PBXBuildFile; fileRef = 6735CD6E1D47F0AB00D7216A /* Spec.md */; };
 		6735CD771D47F67300D7216A /* XC_UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6735CD761D47F67300D7216A /* XC_UITests.m */; };
+		679BE5141D4A0E94004F802E /* App_UnitTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 679BE5131D4A0E94004F802E /* App_UnitTest.m */; };
+		679BE51D1D4A108C004F802E /* WordSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 679BE51C1D4A108C004F802E /* WordSpec.mm */; };
+		679BE5261D4A11BC004F802E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 679BE5251D4A11BC004F802E /* main.m */; };
+		679BE5391D4A1226004F802E /* DAWord.m in Sources */ = {isa = PBXBuildFile; fileRef = FA45AFD31A26840F00F6EF8E /* DAWord.m */; };
+		679BE53A1D4A1313004F802E /* WordSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 679BE51C1D4A108C004F802E /* WordSpec.mm */; };
+		CBB0559FA76742A6A41D8B59 /* libPods-Cedar_UnitTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 60230EC178F919ECDF649A34 /* libPods-Cedar_UnitTest.a */; };
 		FA11CBBC1A2BD2F9006D4B45 /* DAProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA11CBBB1A2BD2F9006D4B45 /* DAProgressView.m */; };
 		FA11CBBF1A2BD92F006D4B45 /* DACardView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA11CBBE1A2BD92F006D4B45 /* DACardView.m */; };
 		FA45AFD41A26840F00F6EF8E /* DAWord.m in Sources */ = {isa = PBXBuildFile; fileRef = FA45AFD31A26840F00F6EF8E /* DAWord.m */; };
@@ -38,14 +44,33 @@
 			remoteGlobalIDString = FAFDA56D1A26745A00377585;
 			remoteInfo = DictApp;
 		};
+		679BE5161D4A0E94004F802E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAFDA5661A26745A00377585 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAFDA56D1A26745A00377585;
+			remoteInfo = DictApp;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		106DBF15CA4F4498869202FE /* libPods-DictApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DictApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		47E706EA5FD203B167C2F2BB /* Pods-Cedar_UnitTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cedar_UnitTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cedar_UnitTest/Pods-Cedar_UnitTest.debug.xcconfig"; sourceTree = "<group>"; };
+		4C0A378D5BD058370EB21B97 /* Pods-DictApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DictApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-DictApp/Pods-DictApp.release.xcconfig"; sourceTree = "<group>"; };
+		60230EC178F919ECDF649A34 /* libPods-Cedar_UnitTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Cedar_UnitTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6735CD6E1D47F0AB00D7216A /* Spec.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Spec.md; sourceTree = "<group>"; };
 		6735CD741D47F67300D7216A /* App_UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = App_UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6735CD761D47F67300D7216A /* XC_UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XC_UITests.m; sourceTree = "<group>"; };
 		6735CD781D47F67300D7216A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		679BE5111D4A0E93004F802E /* App_UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = App_UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		679BE5131D4A0E94004F802E /* App_UnitTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = App_UnitTest.m; sourceTree = "<group>"; };
+		679BE5151D4A0E94004F802E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		679BE51C1D4A108C004F802E /* WordSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = WordSpec.mm; path = ../Specs/Cedar/WordSpec.mm; sourceTree = "<group>"; };
+		679BE5221D4A11BC004F802E /* Cedar_UnitTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cedar_UnitTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		679BE5251D4A11BC004F802E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		679BE5351D4A11BC004F802E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		749E394B080773D9465843EE /* Pods-Cedar_UnitTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cedar_UnitTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cedar_UnitTest/Pods-Cedar_UnitTest.release.xcconfig"; sourceTree = "<group>"; };
+		86F32FE7760C9B1FEF4FE1EA /* Pods-DictApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DictApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DictApp/Pods-DictApp.debug.xcconfig"; sourceTree = "<group>"; };
 		D0FC8F0E96410308C2D08DEE /* Pods-DictApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DictApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DictApp/Pods-DictApp.debug.xcconfig"; sourceTree = "<group>"; };
 		F584B039D44908EB9028910C /* Pods-DictApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DictApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-DictApp/Pods-DictApp.release.xcconfig"; sourceTree = "<group>"; };
 		FA11CBBA1A2BD2F9006D4B45 /* DAProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAProgressView.h; sourceTree = "<group>"; };
@@ -93,6 +118,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		679BE50E1D4A0E93004F802E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		679BE51F1D4A11BC004F802E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBB0559FA76742A6A41D8B59 /* libPods-Cedar_UnitTest.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FAFDA56B1A26745A00377585 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -113,22 +153,44 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		6735CD751D47F67300D7216A /* App_UITests */ = {
+		6735CD751D47F67300D7216A /* XC_UITests */ = {
 			isa = PBXGroup;
 			children = (
 				6735CD761D47F67300D7216A /* XC_UITests.m */,
 				6735CD781D47F67300D7216A /* Info.plist */,
 			);
-			name = App_UITests;
+			name = XC_UITests;
 			path = DictApp_UITests;
 			sourceTree = "<group>";
 		};
 		6735CD7E1D47F67F00D7216A /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				6735CD751D47F67300D7216A /* App_UITests */,
+				679BE5231D4A11BC004F802E /* Cedar_UnitTest */,
+				679BE5121D4A0E94004F802E /* XC_UnitTest */,
+				6735CD751D47F67300D7216A /* XC_UITests */,
 			);
 			name = Tests;
+			sourceTree = "<group>";
+		};
+		679BE5121D4A0E94004F802E /* XC_UnitTest */ = {
+			isa = PBXGroup;
+			children = (
+				679BE5131D4A0E94004F802E /* App_UnitTest.m */,
+				679BE5151D4A0E94004F802E /* Info.plist */,
+			);
+			name = XC_UnitTest;
+			path = App_UnitTest;
+			sourceTree = "<group>";
+		};
+		679BE5231D4A11BC004F802E /* Cedar_UnitTest */ = {
+			isa = PBXGroup;
+			children = (
+				679BE51C1D4A108C004F802E /* WordSpec.mm */,
+				679BE5251D4A11BC004F802E /* main.m */,
+				679BE5351D4A11BC004F802E /* Info.plist */,
+			);
+			path = Cedar_UnitTest;
 			sourceTree = "<group>";
 		};
 		B8AD88B6BB0026B0A46DBAFE /* Frameworks */ = {
@@ -136,8 +198,20 @@
 			children = (
 				462571AB60473645549D1DA2 /* Pods */,
 				106DBF15CA4F4498869202FE /* libPods-DictApp.a */,
+				60230EC178F919ECDF649A34 /* libPods-Cedar_UnitTest.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EE4B190C2C2A8D578B1B7985 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				86F32FE7760C9B1FEF4FE1EA /* Pods-DictApp.debug.xcconfig */,
+				4C0A378D5BD058370EB21B97 /* Pods-DictApp.release.xcconfig */,
+				47E706EA5FD203B167C2F2BB /* Pods-Cedar_UnitTest.debug.xcconfig */,
+				749E394B080773D9465843EE /* Pods-Cedar_UnitTest.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		FA45AFD11A26840F00F6EF8E /* Model */ = {
@@ -222,6 +296,7 @@
 				B8AD88B6BB0026B0A46DBAFE /* Frameworks */,
 				6735CD7E1D47F67F00D7216A /* Tests */,
 				FAFDA56F1A26745A00377585 /* Products */,
+				EE4B190C2C2A8D578B1B7985 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -230,6 +305,8 @@
 			children = (
 				FAFDA56E1A26745A00377585 /* DictApp.app */,
 				6735CD741D47F67300D7216A /* App_UITests.xctest */,
+				679BE5111D4A0E93004F802E /* App_UnitTests.xctest */,
+				679BE5221D4A11BC004F802E /* Cedar_UnitTest.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -287,6 +364,44 @@
 			productReference = 6735CD741D47F67300D7216A /* App_UITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		679BE5101D4A0E93004F802E /* App_UnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 679BE51A1D4A0E94004F802E /* Build configuration list for PBXNativeTarget "App_UnitTests" */;
+			buildPhases = (
+				679BE50D1D4A0E93004F802E /* Sources */,
+				679BE50E1D4A0E93004F802E /* Frameworks */,
+				679BE50F1D4A0E93004F802E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				679BE5171D4A0E94004F802E /* PBXTargetDependency */,
+			);
+			name = App_UnitTests;
+			productName = App_UnitTest;
+			productReference = 679BE5111D4A0E93004F802E /* App_UnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		679BE5211D4A11BC004F802E /* Cedar_UnitTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 679BE5361D4A11BC004F802E /* Build configuration list for PBXNativeTarget "Cedar_UnitTest" */;
+			buildPhases = (
+				85A4886BBD78D69E298272A5 /* [CP] Check Pods Manifest.lock */,
+				679BE51E1D4A11BC004F802E /* Sources */,
+				679BE51F1D4A11BC004F802E /* Frameworks */,
+				679BE5201D4A11BC004F802E /* Resources */,
+				6E4C1B120CD376976C93573F /* [CP] Embed Pods Frameworks */,
+				71A2BC9EAED5BE832F780E23 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cedar_UnitTest;
+			productName = Cedar_UnitTest;
+			productReference = 679BE5221D4A11BC004F802E /* Cedar_UnitTest.app */;
+			productType = "com.apple.product-type.application";
+		};
 		FAFDA56D1A26745A00377585 /* DictApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAFDA5911A26745A00377585 /* Build configuration list for PBXNativeTarget "DictApp" */;
@@ -320,6 +435,13 @@
 						CreatedOnToolsVersion = 7.3.1;
 						TestTargetID = FAFDA56D1A26745A00377585;
 					};
+					679BE5101D4A0E93004F802E = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = FAFDA56D1A26745A00377585;
+					};
+					679BE5211D4A11BC004F802E = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
 					FAFDA56D1A26745A00377585 = {
 						CreatedOnToolsVersion = 6.1;
 						DevelopmentTeam = ZL896XYJDT;
@@ -341,12 +463,28 @@
 			targets = (
 				FAFDA56D1A26745A00377585 /* DictApp */,
 				6735CD731D47F67300D7216A /* App_UITests */,
+				679BE5101D4A0E93004F802E /* App_UnitTests */,
+				679BE5211D4A11BC004F802E /* Cedar_UnitTest */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		6735CD721D47F67300D7216A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		679BE50F1D4A0E93004F802E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		679BE5201D4A11BC004F802E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -380,6 +518,36 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DictApp/Pods-DictApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		6E4C1B120CD376976C93573F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cedar_UnitTest/Pods-Cedar_UnitTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71A2BC9EAED5BE832F780E23 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cedar_UnitTest/Pods-Cedar_UnitTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		8178D4BCED5275AC4B85E0FC /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -393,6 +561,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DictApp/Pods-DictApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85A4886BBD78D69E298272A5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		E5684205ADCE5FD3833C7F55 /* [CP] Check Pods Manifest.lock */ = {
@@ -421,6 +604,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		679BE50D1D4A0E93004F802E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				679BE5141D4A0E94004F802E /* App_UnitTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		679BE51E1D4A11BC004F802E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				679BE5391D4A1226004F802E /* DAWord.m in Sources */,
+				679BE53A1D4A1313004F802E /* WordSpec.mm in Sources */,
+				679BE5261D4A11BC004F802E /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FAFDA56A1A26745A00377585 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -441,6 +642,7 @@
 				FA45AFD41A26840F00F6EF8E /* DAWord.m in Sources */,
 				FA45AFDF1A26842C00F6EF8E /* DACardsViewController.m in Sources */,
 				FA45AFEE1A26849100F6EF8E /* UIStoryboard+Utils.m in Sources */,
+				679BE51D1D4A108C004F802E /* WordSpec.mm in Sources */,
 				FA45B0021A2B9A7200F6EF8E /* DAPlacehoderView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -452,6 +654,11 @@
 			isa = PBXTargetDependency;
 			target = FAFDA56D1A26745A00377585 /* DictApp */;
 			targetProxy = 6735CD791D47F67300D7216A /* PBXContainerItemProxy */;
+		};
+		679BE5171D4A0E94004F802E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAFDA56D1A26745A00377585 /* DictApp */;
+			targetProxy = 679BE5161D4A0E94004F802E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -498,6 +705,72 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "5e5d2cca-d46b-4d70-9c3a-e3013a51127a";
 				TEST_TARGET_NAME = DictApp;
+			};
+			name = Release;
+		};
+		679BE5181D4A0E94004F802E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = App_UnitTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nazaroff.App-UnitTest";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DictApp.app/DictApp";
+			};
+			name = Debug;
+		};
+		679BE5191D4A0E94004F802E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = App_UnitTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nazaroff.App-UnitTest";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DictApp.app/DictApp";
+			};
+			name = Release;
+		};
+		679BE5371D4A11BC004F802E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47E706EA5FD203B167C2F2BB /* Pods-Cedar_UnitTest.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = Cedar_UnitTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nazaroff.Cedar-UnitTest";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		679BE5381D4A11BC004F802E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 749E394B080773D9465843EE /* Pods-Cedar_UnitTest.release.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = Cedar_UnitTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nazaroff.Cedar-UnitTest";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -620,6 +893,25 @@
 				6735CD7D1D47F67300D7216A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		679BE51A1D4A0E94004F802E /* Build configuration list for PBXNativeTarget "App_UnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				679BE5181D4A0E94004F802E /* Debug */,
+				679BE5191D4A0E94004F802E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		679BE5361D4A11BC004F802E /* Build configuration list for PBXNativeTarget "Cedar_UnitTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				679BE5371D4A11BC004F802E /* Debug */,
+				679BE5381D4A11BC004F802E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FAFDA5691A26745A00377585 /* Build configuration list for PBXProject "DictApp" */ = {
 			isa = XCConfigurationList;
