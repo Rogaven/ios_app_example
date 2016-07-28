@@ -13,11 +13,11 @@
             buildForProfiling = "YES"
             buildForArchiving = "YES">
             <BuildableReference
-               BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'E7474B0C0591ECDA086213B8443DB86A'
-               BlueprintName = 'Pods-DictApp'
-               ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libPods-DictApp.a'>
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "E7474B0C0591ECDA086213B8443DB86A"
+               BlueprintName = "Pods-DictApp"
+               ReferencedContainer = "container:Pods.xcodeproj"
+               BuildableName = "libPods-DictApp.a">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

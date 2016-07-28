@@ -15,14 +15,6 @@
     [app launch];
 }
 
-- (void)tearDown {
-    [super tearDown];
-}
-
-- (void)testShowActivityAfterAppStarted {
-    XCTAssert([app.activityIndicators[@"In progress"] exists]);
-}
-
 - (void)testLearnTwoWords {
     XCUIElement *activity = app.activityIndicators[@"In progress"];
     [self expectationForPredicate:[NSPredicate predicateWithFormat:@"exists == 0"]
@@ -58,6 +50,10 @@
     XCUIElement *firstCellCheckbox = [[tables.cells containingType:XCUIElementTypeStaticText
                                                         identifier:@"Adventurous"].buttons elementBoundByIndex:0];
     XCTAssertTrue([firstCellCheckbox.label isEqualToString:@"✔︎"]);    
+}
+
+- (void)testShowActivityAfterAppStarted {
+    XCTAssert([app.activityIndicators[@"In progress"] exists]);
 }
 
 @end

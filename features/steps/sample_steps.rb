@@ -30,4 +30,4 @@ Then(/^something should happen$/) do
       fail 'Counter didn\'t increase'
   end
   touch("* marked:'Train'")
-end
+end  
